@@ -1,0 +1,8 @@
+*.mp4
+__pycache__/
+TempClips/
+.DS_Store
+tmp/
+*.save
+VideoFiles/
+*.ini
