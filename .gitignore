@@ -6,3 +6,8 @@ tmp/
 *.save
 VideoFiles/
 *.ini
+.idea/
+Backup/
+FinalVideos/
+Finished Videos/
+*.txt
