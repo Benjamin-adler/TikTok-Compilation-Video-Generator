@@ -106,8 +106,9 @@ def getAllClips(filter, amount, window):
                 amountJustAdded += 1
 
             return newIds
-        except Exception:
+        except Exception as e:
             print("error occurred parsing: %s" % results)
+            print("Exeption: %s" % e)
             return None
 
     searchAmount = amount
@@ -125,7 +126,7 @@ def getAllClips(filter, amount, window):
                     print("Looking for %s clips for hashtag %s" % (count, hashtag))
                     results = api.getVideosByHashTag(hashtag, count)
 
-                    new = attemptAddScripts(results, "Trending")
+                    new = attemptAddScripts(results, "Hashtag")
                     if new is None:
                         break
                     new_ids.append(new)
